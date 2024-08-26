@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #dfdfdf;
+  }
+
+  #bigWheel {
+    animation: wheel 15s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  
+  @keyframes wheel {
+    from {
+      transform: rotateZ(360deg);
+    }
+    to {
+      transform: rotateZ(0deg);
+    }
+  }
+  
+  #cabins {
+    animation: cabins 6s linear infinite;
+    transform-origin: top;
+  }
+  
+  @keyframes cabins {
+    0%,
+    100% {
+      transform: rotate(3deg);
+    }
+    50% {
+      transform: rotate(-3deg);
+    }
+  }
+  #tree {
+    animation: tree 2s linear infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+  }
+  
+  @keyframes tree {
+    0%,
+    100% {
+      transform: rotate(4deg);
+    }
+    50% {
+      transform: rotate(-4deg);
+    }
+  
+  
+
+    
+    
+
+ 
+  
